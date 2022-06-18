@@ -157,9 +157,9 @@ text-align: center;
 }
 
 .card button{
-    padding: 0.5em;
+    padding: 1em;
     border: none;
-    border-radius: 30px;
+    border-radius: 10px;
     color: #fff;
 }
 
