@@ -15,9 +15,6 @@ body {
     min-height: 100vh;
    
 }
-.App {
-    text-align: center;
-}
 
 header {
     background-image: url(./img/giphy.gif);
@@ -26,6 +23,10 @@ header {
     background-size: cover;
     height: 200px;
     
+}
+
+.App {
+    text-align: center;
 }
 
 .container-buttonshow {
@@ -43,6 +44,11 @@ header {
     font-weight: 600;
     background-color: #3866f2;
     color: #fff;
+}
+
+.showbutton:hover {
+    background-color: #0f39b8;
+    transition: .5s;
 }
 
 .form {
@@ -114,6 +120,11 @@ text-align: center;
 
 }
 
+.form-submit:hover {
+    background-color: #0f39b8;
+    transition: .5s;
+}
+
 .form-line {
     position: absolute;
     bottom: 0;
@@ -150,6 +161,7 @@ text-align: center;
 
 .email {
     color: #706c6c;
+    font-size: 12px;
 }
 .birthday {
     font-weight: 600;
@@ -168,11 +180,39 @@ text-align: center;
     
 }
 
+.delete:hover {
+    background-color: #a30909;
+    transition: .5s;
+}
+
 .update {
     background-color: rgba(12, 103, 240, 0.973);
     margin-left: 1em;
 }
 
+.update:hover {
+    background-color: #1111c0;
+    transition: .5s;
+}
+
+@media (min-width:480px){
+    header{
+        background-image: url(./img/giphy.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+}
+}
+@media (min-width:720px){
+    header{
+        background-image: url(./img/Gif-1.gif);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+}
+}
 
 @media (min-width:1024px) {
     header{
@@ -181,5 +221,163 @@ text-align: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 300px;
+}
+
+.App {
+    text-align: center;
+}
+
+.container-buttonshow {
+    margin-top: 2rem;
+    text-align: start;
+    
+}
+
+.showbutton {
+    margin-left: 1rem;
+    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    background-color: #3866f2;
+    color: #fff;
+    font-size: 20px;
+}
+
+.form {
+background-color: white;
+display: inline-block;
+margin-top: 2rem;
+padding: 4.5em 3em;
+width: 90%;
+max-width: 600px;
+border-radius: 20px;
+box-shadow: 0 5px 10px -5px rgba(0 0 0 / 30%);
+text-align: center;
+}
+
+.form-title {
+    font-size: 2.5rem;
+    margin-bottom: .5em;
+}
+
+.form-container {
+    margin-top: 2em;
+    display: grid;
+    gap: 2em;
+
+}
+
+.form-group {
+    position: relative;
+    --color: #5757577e;
+}
+
+.form-input {
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1.5rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    top: 0;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.form-submit {
+    background-color: #3866f2;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: .8em 0;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.form-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 3em;
+
+}
+
+.card {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 500px;
+
+}
+
+.card h2 {
+    font-size: 30px;
+}
+.container-buttons {
+    margin-top: 1em;
+}
+
+.card ul {
+    margin-top: 1em;
+}
+
+.email {
+    color: #706c6c;
+    font-size: 16px;
+}
+.birthday {
+    font-weight: 600;
+    margin-top: 0.5em;
+    font-size: 20px;
+}
+
+.card button{
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.delete {
+    font-size: 18px;
+    background-color: red;
+    
+}
+
+.update {
+    background-color: rgba(12, 103, 240, 0.973);
+    margin-left: 1em;
+    font-size: 18px;
 }
 }
