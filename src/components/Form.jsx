@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Form = ({ createUsers, getUsers, update, objectUpdate,setObjectUpdate,register,handleSubmit,reset }) => {
+const Form = ({ createUsers, getUsers, update, objectUpdate,setObjectUpdate,register,handleSubmit,reset,setIsShow }) => {
  
 
   const defaultValue = {
@@ -24,6 +24,7 @@ const Form = ({ createUsers, getUsers, update, objectUpdate,setObjectUpdate,regi
       getUsers()
     }
     reset(defaultValue);
+    setIsShow(false)
   };
   return (
     <form className="form" onSubmit={handleSubmit(submit)}>

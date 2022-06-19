@@ -22,7 +22,7 @@ function App() {
     
     getUsers();
 
-  }, [])
+  }, [getUsers])
 
   const deleteUsers = id => {
     axios.delete(`https://users-crud1.herokuapp.com/users/${id}/`)
@@ -72,6 +72,7 @@ function App() {
         createUsers={createUsers} 
         getUsers={getUsers} 
         update={update}
+        setIsShow={setIsShow}
         objectUpdate={objectUpdate}
         setObjectUpdate={setObjectUpdate}
         register={register}
