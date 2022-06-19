@@ -1,7 +1,7 @@
 import { FaBirthdayCake, FaPencilAlt } from "react-icons/fa";
 import {BsTrashFill} from 'react-icons/bs'
 
-const CardUser = ({user}) => {
+const CardUser = ({user, deleteUsers}) => {
     console.log(user)
   return (
     <article className="card">
@@ -11,7 +11,7 @@ const CardUser = ({user}) => {
             <li className="birthday"><FaBirthdayCake/> {user.birthday}</li>
         </ul>
         <div className="container-buttons">
-            <button className="delete"><BsTrashFill/></button>
+            <button onClick={()=>deleteUsers(user.id)} className="delete"><BsTrashFill/></button>
             <button className="update"><FaPencilAlt/></button>
         </div>
         
